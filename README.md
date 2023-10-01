@@ -52,7 +52,8 @@ Open Offset Explorer
 ![image](https://github.com/srss-pocs/Apache-Kafka-Installation-Windows/assets/145287517/f9faaff3-ef43-4795-aa83-92bfd30a77b6)
 
 
-
+Delete Topic
+kafka-topics --bootstrap-server localhost:9092 --delete --topic springboot-kafka-json-demo-topic
 
 
 
