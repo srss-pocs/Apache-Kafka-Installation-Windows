@@ -3,25 +3,25 @@ Command line
 
 ![image](https://github.com/srss-pocs/Apache-Kafka-Installation-Windows/assets/145287517/dd006a78-05f2-485d-bad4-4a62b1a4945e)
 
-Producer – A Kafka producer is an application that sends data/events to a Kafka topic. Producers send the messages to the broker, which then distributes the data across the available partitions.
+ Producer – A Kafka producer is an application that sends data/events to a Kafka topic. Producers send the messages to the broker, which then distributes the data across the available partitions.
 
-Consumer – A program that subscribes to one or more topics and receives messages from brokers.
+ Consumer – A program that subscribes to one or more topics and receives messages from brokers.
 
-Topics – A category or feed name to which messages are published. It represents a particular stream of data.
+ Topics – A category or feed name to which messages are published. It represents a particular stream of data.
 
-Partitions – Partitions are where the messages live inside the topic. Each topic is created with one or more partitions. The partitions have a significant effect on scalable message consumption. Each partition is hosted on a separate Kafka broker.
+ Partitions – Partitions are where the messages live inside the topic. Each topic is created with one or more partitions. The partitions have a significant effect on scalable message consumption. Each partition is hosted on a separate Kafka broker.
 
-Broker – A single Kafka server instance that stores and manages the partitions. Brokers act as a bridge between consumers and producers.
+ Broker – A single Kafka server instance that stores and manages the partitions. Brokers act as a bridge between consumers and producers.
 
-Leader: Each partition has one broker acting as the leader, responsible for handling all read and write requests for that partition. The leader replicates data to other brokers to provide fault tolerance.
+ Leader: Each partition has one broker acting as the leader, responsible for handling all read and write requests for that partition. The leader replicates data to other brokers to provide fault tolerance.
 
-Replication Factor – A replication factor is the number of copies of a message over multiple brokers. The value should be less than or equal to the number of brokers that we have. Replication provides high availability and fault tolerance.
+ Replication Factor – A replication factor is the number of copies of a message over multiple brokers. The value should be less than or equal to the number of brokers that we have. Replication provides high availability and fault tolerance.
 
-Offset: Each message within a partition is assigned a unique identifier called an offset. It represents the position of a message within a partition.
+ Offset: Each message within a partition is assigned a unique identifier called an offset. It represents the position of a message within a partition.
 
-Consumer Offset: It indicates the position of the last message consumed by a consumer from a specific partition. It helps consumers track their progress within a partition.
+ Consumer Offset: It indicates the position of the last message consumed by a consumer from a specific partition. It helps consumers track their progress within a partition.
 
-Producer Acknowledgment: It is a configuration option for the level of acknowledgment required from Kafka brokers after a message is published. It can be set to ensure message durability and reliability.
+ Producer Acknowledgment: It is a configuration option for the level of acknowledgment required from Kafka brokers after a message is published. It can be set to ensure message durability and reliability.
 
 
 
